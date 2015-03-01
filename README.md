@@ -1,8 +1,7 @@
-# timb - The Internet is my backup
+# timb - The Internet is My Backup
 
-USE CASE:
-You have a local git repo that you wish to push to both your own git server,
-github and bitbucket.
+__USE CASE:__ You have a local git repo that you wish to push to both your own
+git server, github and bitbucket.
 
 #### Prerequisites
 
