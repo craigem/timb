@@ -1,7 +1,0 @@
-[grb]
-GITDIR = /PATH/TO/YOUR/LOCAL/GIT/STORE
-GITHUBUSER = example_github_user
-BITBUCKETUSER = example_bitbucket_user
-GITSERVER = your.git.server
-GITREMOTEDIR = /var/lib/git
-LICENSE = /usr/share/common-licenses/GPL
