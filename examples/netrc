@@ -1,0 +1,7 @@
+machine api.github.com
+    login github_user_name
+    password GITHUB_PASSWORD
+
+machine api.bitbucket.org
+    login bitbucket_user_name
+    password BITBUCKET_PASSWORD
