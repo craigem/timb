@@ -29,3 +29,8 @@ remote
 
 * If you don't already have one, copy the example netrc to ~/.netrc and replace the example content with your own credentials to GitHub and bitbucket.
 * Copy the example timbrc to ~/.timbrc and set the variables to suite your own environment.
+
+## To Do
+
+* Error handling. There's a lot more of it needed.
+* Removing all the named repo's with a  "-r" argument.
