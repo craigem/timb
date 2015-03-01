@@ -24,3 +24,8 @@ remote
 * Creates a repo at GitHub.
 * Creates a repo at bitbucket.
 * Pushes to remote.
+
+#### Usage
+
+* If you don't already have one, copy the example netrc to ~/.netrc and replace the example content with your own credentials to GitHub and bitbucket.
+* Copy the example timbrc to ~/.timbrc and set the variables to suite your own environment.
