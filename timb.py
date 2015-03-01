@@ -34,7 +34,7 @@ import json
 
 # Get HOME
 HOME = os.getenv('HOME')
-RCFILE = ("%s/.timb.rc" % HOME)
+RCFILE = ("%s/.timbrc" % HOME)
 
 # Read the variables from the local config file
 CONFIG = ConfigParser.ConfigParser()
