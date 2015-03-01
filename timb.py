@@ -5,6 +5,7 @@ You have a local git repo that you wish to push to both your own git server,
 github and bitbucket.
 
 This script
+
 * Reads your local ~/.netrc
 * Gets repo name and description from arguments
 * Builds a git repo locally
@@ -33,7 +34,7 @@ import json
 
 # Get HOME
 HOME = os.getenv('HOME')
-RCFILE = ("%s/.gitweb_repo_build.rc" % HOME)
+RCFILE = ("%s/.timb.rc" % HOME)
 
 # Read the variables from the local config file
 CONFIG = ConfigParser.ConfigParser()
@@ -89,7 +90,7 @@ def localrepo():
         repo.index.commit("Added LICENSE.")
 
         # Add the README file
-        readme = "%s/README" % REPODIR
+        readme = "%s/README.md" % REPODIR
         with open(readme, "w") as text_file:
             text_file.write(
                 "# %s \nThis is the initial README for the %s git repo."
