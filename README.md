@@ -10,7 +10,7 @@ git server, github and bitbucket.
 * Github account
 * Bitbucket account
 
-#### This programme:
+#### This program:
 
 * Reads your local ~/.netrc
 * Gets a repo name and description from arguments
@@ -28,7 +28,7 @@ remote
 #### Usage
 
 * If you don't already have one, copy the example netrc to ~/.netrc and replace the example content with your own credentials to GitHub and bitbucket.
-* Copy the example timbrc to ~/.timbrc and set the variables to suite your own environment.
+* Copy the example timbrc to ~/.timbrc and set the variables to suit your own environment.
 
 ## To Do
 
