@@ -1,6 +1,8 @@
 [grb]
 GITDIR = /PATH/TO/YOUR/LOCAL/GIT/STORE
+GITHUB_API_URL = https://api.github.com/user/repos
 GITHUBUSER = example_github_user
+BITBUCKET_API_URL = https://api.bitbucket.org/2.0/repositories
 BITBUCKETUSER = example_bitbucket_user
 GITSERVER = your.git.server
 GITREMOTEDIR = /var/lib/git
