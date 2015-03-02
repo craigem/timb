@@ -40,7 +40,9 @@ RCFILE = ("%s/.timbrc" % HOME)
 CONFIG = ConfigParser.ConfigParser()
 CONFIG.read(RCFILE)
 GITDIR = CONFIG.get("grb", "GITDIR")
+GITHUB_API_URL = CONFIG.get("grb", "GITHUB_API_URL")
 GITHUBUSER = CONFIG.get("grb", "GITHUBUSER")
+BITBUCKET_API_URL = CONFIG.get("grb", "BITBUCKET_API_URL")
 BITBUCKETUSER = CONFIG.get("grb", "BITBUCKETUSER")
 GITSERVER = CONFIG.get("grb", "GITSERVER")
 GITREMOTEDIR = CONFIG.get("grb", "GITREMOTEDIR")
@@ -143,12 +145,11 @@ def socialrepos():
     print "Creating the repo at Github"
     payload = json.dumps({'name': REPONAME, 'description': DESCRIPTION})
     req = requests.post(
-        'https://api.github.com/user/repos', payload)
+        '%s' % GITHUB_API_URL, payload)
     print "Creating the repo at Bitbucket"
     payload = json.dumps({"description": "%s" % DESCRIPTION})
     req = requests.post(
-        'https://api.bitbucket.org/2.0/repositories/%s/%s' %
-        (BITBUCKETUSER, REPONAME), payload)
+        '%s/%s/%s' % (BITBUCKET_API_URL, BITBUCKETUSER, REPONAME), payload)
     # Description not working for Bitbucket...
 
 
