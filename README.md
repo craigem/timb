@@ -35,5 +35,4 @@ remote
 * Error handling. There's a lot more of it needed.
 * Removing all the named repo's with a  "-r" argument.
 * Move handling of LICENCE and README files into options
-* Move Github and Bitbucket API URLs into configuration options.
-* Make the socialrepos fucntion interate through a list of enabled git hosts
+* Make the socialrepos function iterate through a list of enabled git hosts
